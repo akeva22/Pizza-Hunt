@@ -36,4 +36,4 @@ PizzaSchema.virtual('commentCount').get(function() {
 
 const Pizza = model('Pizza', PizzaSchema);
 
-module.exports = { Pizza, Comment };
+module.exports = Pizza;
