@@ -12,7 +12,7 @@ const PizzaSchema = new Schema({
     createdAt: {
         type: Date,
         default: Date.now,
-        get: (createdAtVal) => dateFormat(createAtVal)
+        get: (createAtVal) => dateFormat(createAtVal)
     },
     size: {
         type: String,

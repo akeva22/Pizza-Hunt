@@ -25,7 +25,7 @@ const pizzaController = {
                 select: '-__v'
             })
             .select('-__v')
-        then(dbPizzaData => {
+            .then(dbPizzaData => {
                 if (!dbPizzaData) {
                     res.status(404).json({ message: 'No pizza found with this id!' });
                     return;
